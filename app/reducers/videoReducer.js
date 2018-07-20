@@ -1,7 +1,17 @@
 import * as types from '../actions/actionTypes';
 
 const videoInitialState = {
-  videoPlaying: false,
+  isReady: false,
+  status: null,
+  quality: null,
+  error: null,
+  isPlaying: true,
+  isLooping: true,
+  duration: 0,
+  currentTime: 0,
+  fullscreen: false,
+  containerMounted: false,
+  containerWidth: null,
 };
 
 export default videoReducer = (state = videoInitialState, action) => {
