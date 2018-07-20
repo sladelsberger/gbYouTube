@@ -22,6 +22,9 @@ export default videoReducer = (state = videoInitialState, action) => {
     case types.PAUSE_VIDEO:
       return state;
 
+    case types.LOOP_VIDEO:
+      return state;
+
     case types.FORWARD_VIDEO:
       return state;
 

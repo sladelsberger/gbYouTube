@@ -12,6 +12,11 @@ export const pauseVideo = data => ({
   payload: data,
 });
 
+export const loopVideo = data => ({
+  type: types.LOOP_VIDEO,
+  payload: data,
+});
+
 export const forwardVideo = data => ({
   type: types.FORWARD_VIDEO,
   payload: data,
