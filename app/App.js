@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
+import { View } from 'react-native';
 
 import store from './reducers/index';
 import VideoApp from './components/videoComponent';
+import ButtonControl from './components/buttonComponent';
 
 export default class App extends Component {
   constructor(props) {
@@ -12,7 +14,10 @@ export default class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <VideoApp />
+        <View>
+          <VideoApp />
+          <ButtonControl />
+        </View>
       </Provider>
       
     );
